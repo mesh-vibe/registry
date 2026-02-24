@@ -1,0 +1,32 @@
+{
+  "name": "meshvibe-registry",
+  "version": "0.1.0",
+  "description": "Service catalog, health checks, and discovery for the MeshVibe ecosystem",
+  "type": "module",
+  "main": "./dist/index.js",
+  "bin": {
+    "registry": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "dev": "tsc -p tsconfig.build.json --watch",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": [
+    "meshvibe",
+    "registry",
+    "service-catalog",
+    "health-check"
+  ],
+  "author": "MeshVibe",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^13.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.21",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.4"
+  }
+}
