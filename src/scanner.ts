@@ -4,7 +4,7 @@ import { homedir } from "node:os";
 import matter from "gray-matter";
 import type { ServiceManifest } from "./types.js";
 
-const PROJECTS_DIR = join(homedir(), "IdeaProjects");
+const PROJECTS_DIR = join(homedir(), "IdeaProjects", "mesh-vibe");
 
 export function scanManifests(projectsDir: string = PROJECTS_DIR): ServiceManifest[] {
   if (!existsSync(projectsDir)) return [];
